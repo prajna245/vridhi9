@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+  <app-sec-navbar></app-sec-navbar>
+  <app-banner></app-banner>
+
+<div class="quick-menu" style="margin-top: 20px;">
+  <h2>Quick Recommendations</h2>
+  <div class="product-details" [ngClass]="{'show-more': showMore}">
+    <div class="product1" *ngFor="let imagePath of imagePaths">
+      <img [src]="imagePath" style="width: 225px; height: 225px;" alt="">
+      <h5>Product Name: Jewelry Box</h5>
+      <p>Price: $69.99</p>
+    </div>
+  </div>
+  <button (click)="toggleShowMore()" class="toggle-button">
+    {{ showMore ? 'View Less' : 'View More' }}
+  </button>
+</div>
+<app-footer></app-footer>

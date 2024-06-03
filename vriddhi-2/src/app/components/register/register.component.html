@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="register.component.css">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <div class="logo-email">
+        <img src="assets/logo.png" alt="Logo">
+      </div>
+      
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" formControlName="fullName" [(ngModel)]="registerForm.value.fullName" class="form-control" pattern="[A-Za-z]+" title="Full name should contain alphabetic characters" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" formControlName="email" [(ngModel)]="registerForm.value.email" class="form-control" title="Please enter a valid email address" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" id="phoneNumber" formControlName="phoneNumber" [(ngModel)]="registerForm.value.phoneNumber" class="form-control" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+        <button type="button" class="btn btn-secondary" (click)="requestOTP()">Get OTP</button>
+      </div>
+  
+      <div class="form-group">
+        <label for="otp">OTP</label>
+        <input type="text" id="otp" formControlName="otp" [(ngModel)]="registerForm.value.otp" class="form-control">
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="password-toggle">
+          <input type="{{ passwordVisible ? 'text' : 'password' }}" id="password" formControlName="password" [(ngModel)]="registerForm.value.password" class="form-control" title="Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character" required>
+          <i class="fa-solid fa-eye-slash fa-lg toggle-password" (click)="togglePasswordVisibility()"></i>
+        </div>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Submit</button>
+  
+      <div class="login-link">
+        <span class="Signup">Do you have an account?</span>
+        <a routerLink="/login" class="button">Login</a>
+      </div>
+    </div>
+  </form>
+  
+</body>
+</html>
+
+
+
+
+
+
+  
+
+ 
+  

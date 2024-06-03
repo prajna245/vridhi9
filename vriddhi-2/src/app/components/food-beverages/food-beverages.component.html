@@ -1,0 +1,109 @@
+<app-navbar></app-navbar>
+  <app-sec-navbar></app-sec-navbar>
+  <app-banner></app-banner>
+  <div class="quick-menu" style="margin-top: 20px;">
+    <h2>Quick Recommendations</h2>
+    <div class="product-details" [ngClass]="{'show-more': showMore}">
+      <div class="product1 ">
+        <img src="assets/food/i16.jpg" style="width: 225px; height:225px;"  alt="">
+        <h6>Product Name: Food</h6>
+        <p>Price: $69.99</p>
+      </div>
+      <div class="product1">
+        <img src="assets/food/i17.jpg" style="width: 225px; height:225px;" alt="">
+        <h6>Product Name: Food</h6>
+        <p>Price: $69.99</p>
+      </div>
+      <div class="product1">
+        <img src="assets/food/i13.jpg" style="width: 225px; height:225px;"  alt="">
+        <h6>Product Name: Food</h6>
+        <p>Price: $69.99</p>
+      </div>
+      <div class="product1">
+        <img src="assets/food/i11.jpg" style="width: 225px; height:225px;"  alt="">
+        <h6>Product Name: Food</h6>
+        <p>Price: $69.99</p>      
+        </div>
+    </div>
+    <div *ngIf="showMore" class="additional-products">
+      <div class="product-details2">
+      <div class="product2">
+          <img src="assets/image1.jpg" style="width: 225px; height:225px;" alt="">
+          <h6>Product Name: Jewelry Box</h6>
+          <p>Price: $69.99</p>
+      </div>
+      <div class="product2">
+          <img src="assets/image1.jpg" style="width: 225px; height:225px;" alt="">
+          <h6>Product Name: Jewelry Box</h6>
+          <p>Price: $69.99</p>
+      </div> 
+        <div class="product2">
+            <img src="assets/image1.jpg" style="width: 225px; height:225px;" alt="">
+            <h6>Product Name: Jewelry Box</h6>
+            <p>Price: $69.99</p>
+        </div>
+        <div class="product2">
+          <img src="assets/image1.jpg" style="width: 225px; height:225px;" alt="">
+          <h6>Product Name: Jewelry Box</h6>
+          <p>Price: $69.99</p>
+      </div>           
+  </div>
+</div>
+<button (click)="toggleShowMore()" class="toggle-button">
+  {{ showMore ? 'View Less' : 'View More' }}
+</button>
+</div>
+<div class="fresh-recommendations" style="margin-top: 20px;">
+  <h2>Fresh Recommendations</h2>
+  <div class="product-details" [ngClass]="{'show-more': showMore}">
+    <div class="product1 ">
+      <img src="assets/food/i18.jpg"  style="width: 225px; height:225px;"  alt="">
+      <h6>Product Name: Jewelry Box</h6>
+      <p>Price: $69.99</p>
+    </div>
+    <div class="product1">
+      <img src="assets/food/i19.jpg" style="width: 225px; height:225px;" alt="">
+      <h6>Product Name: Jewelry Box</h6>
+      <p>Price: $69.99</p>
+    </div>
+    <div class="product1">
+      <img src="assets/food/i11.jpg"  style="width: 225px; height:225px;"  alt="">
+      <h6>Product Name: Jewelry Box</h6>
+      <p>Price: $69.99</p>
+    </div>
+    <div class="product1">
+      <img src="assets/food/i12.jpg"  style="width: 225px; height:225px;"  alt="">
+      <h6>Product Name: Jewelry Box</h6>
+      <p>Price: $69.99</p>      
+      </div>
+  </div>
+  <div *ngIf="showMore" class="additional-products">
+    <div class="product-details2">
+    <div class="product2">
+        <img src="assets/image1.jpg" style="width: 225px; height:225px;" alt="">
+        <h6>Product Name: Jewelry Box</h6>
+        <p>Price: $69.99</p>
+    </div>
+    <div class="product2">
+        <img src="assets/image1.jpg" style="width: 225px; height:225px;" alt="">
+        <h6>Product Name: Jewelry Box</h6>
+        <p>Price: $69.99</p>
+    </div> 
+      <div class="product2">
+          <img src="assets/image1.jpg" style="width: 225px; height:225px;" alt="">
+          <h6>Product Name: Jewelry Box</h6>
+          <p>Price: $69.99</p>
+      </div>
+      <div class="product2">
+        <img src="assets/image1.jpg" style="width: 225px; height:225px;" alt="">
+        <h6>Product Name: Jewelry Box</h6>
+        <p>Price: $69.99</p>
+    </div>    
+</div>
+</div>
+</div>
+<button (click)="toggleShowMore()"  class="toggle-button1">
+{{ showMore ? 'View Less' : 'View More' }}
+</button>
+
+  <app-footer></app-footer>

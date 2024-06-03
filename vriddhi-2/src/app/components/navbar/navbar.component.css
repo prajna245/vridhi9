@@ -1,0 +1,154 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6f4f4;
+  color: #fff;
+  padding: 10px 20px;
+  flex-wrap: wrap; 
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.2em;
+  padding: 2px 10px;
+  margin-top: 8px;
+  height: 40px;
+  flex: 1 1 auto; 
+  max-width: 100px;
+
+}
+
+.search-dropdown{
+  padding-top:9px;
+  padding-bottom: 9px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
+  border:1px solid #ccc;
+  background-color: white;
+  width: 220px;
+}
+
+.search-input {
+  padding: 9px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+
+.clear-search {
+  cursor: pointer;
+
+  font-size: 20px;
+  color: #0e0d0d;
+}
+
+.search-icon {
+  font-size: 1.2em;
+  display: flex;
+  color: #0e0d0d;
+}
+
+.searching-pt {
+  flex: 1 1 auto; 
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 10px; 
+  gap: 20px;
+ 
+}
+
+.search-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+
+.last-part {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+ .logout,
+.sell {
+  font-size: large;
+  
+}
+
+
+.logout a {
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+
+.logout a:hover {
+  text-decoration: underline;
+}
+
+.sell {
+  cursor: pointer;
+
+  padding: 5px 20px;
+  color: #0e0d0d;
+  border-radius: 90px;
+  border-style: solid;
+  border-width: 4px;
+  border-top-color: red;
+  border-right-color: rgb(81, 247, 21);
+  border-left-color: rgb(249, 233, 5);
+  border-bottom-color: rgb(16, 16, 225);
+  background-color: rgb(249, 249, 249);
+}
+
+.sell:hover {
+  background-color: #eaa418;
+}
+a{
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+ 
+  .navbar {
+    flex-direction: column; 
+  }
+ 
+
+  .logo {
+      width: 80px;
+      margin-left: -300px;
+      margin-bottom: 10px;
+  }
+
+.search-icons{
+  margin-left: -16px;
+}
+
+  .search-dropdown, .search-input{
+    width: 150px;
+  }
+  .search-input{
+    margin-left: -10px;
+  }
+.searching-mobile{
+  margin-left: -15px;
+  margin-top: 10px;
+}
+  .last-part {
+      flex-grow: 1;
+      justify-content: flex-end;
+    
+      margin-top: -105px;
+      margin-bottom: 65px;
+      margin-left: 173px;
+  }
+}

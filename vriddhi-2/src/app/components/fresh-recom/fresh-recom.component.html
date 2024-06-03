@@ -1,0 +1,52 @@
+<div class="fresh-recommendations" style="margin-top: 20px;">
+  <h2>Fresh Recommendations</h2>
+  <div class="product-details" [ngClass]="{'show-more': showMore}">
+    <div class="product1 ">
+      <img src="assets/img3.webp" style="width: 225px; height:225px;" alt="">
+      <h6>Product Name: Jewelry Box</h6>
+      <p>Price: $69.99</p>
+    </div>
+    <div class="product1">
+      <img src="assets/ornaments/s4.jpg" style="width: 225px; height:225px;" alt="">
+      <h6>Product Name: Jewelry Box</h6>
+      <p>Price: $69.99</p>
+    </div>
+    <div class="product1">
+      <img src="assets/food/i13.jpg" style="width: 225px; height:225px;" alt="">
+      <h6>Product Name: Jewelry Box</h6>
+      <p>Price: $69.99</p>
+    </div>
+    <div class="product1">
+      <img src="assets/decorative/d1.jpg" style="width: 225px; height:225px;" alt="">
+      <h6>Product Name: Jewelry Box</h6>
+      <p>Price: $69.99</p>
+    </div>
+  </div>
+  <div *ngIf="showMore" class="additional-products">
+    <div class="product-details2">
+      <div class="product2">
+        <img src="assets/image1.jpg" style="width: 225px; height:225px;" alt="">
+        <h6>Product Name: Jewelry Box</h6>
+        <p>Price: $69.99</p>
+      </div>
+      <div class="product2">
+        <img src="assets/image1.jpg" style="width: 225px; height:225px;" alt="">
+        <h6>Product Name: Jewelry Box</h6>
+        <p>Price: $69.99</p>
+      </div>
+      <div class="product2">
+        <img src="assets/image1.jpg" style="width: 225px; height:225px;" alt="">
+        <h6>Product Name: Jewelry Box</h6>
+        <p>Price: $69.99</p>
+      </div>
+      <div class="product2">
+        <img src="assets/image1.jpg" style="width: 225px; height:225px;" alt="">
+        <h6>Product Name: Jewelry Box</h6>
+        <p>Price: $69.99</p>
+      </div>
+    </div>
+  </div>
+</div>
+<button (click)="toggleShowMore()" class="toggle-button1">
+  {{ showMore ? 'View Less' : 'View More' }}
+</button>

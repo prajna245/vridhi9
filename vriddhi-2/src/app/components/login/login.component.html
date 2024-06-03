@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vridhi project</title>
+    <link rel="stylesheet" href="login.component.css">
+</head>
+
+<body> 
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <div class="logo-email">
+        <img src="assets/logo.png" alt="Logo">
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" formControlName="email" class="form-control" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" formControlName="password" class="form-control" required>
+      </div>
+  
+      <div *ngIf="loginError" class="error-message">{{ loginError }}</div>
+  
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+      <div class="login-link">
+        <span class="Signup">Do you have an account?</span>
+        <a routerLink="/register" class="button">Register</a>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
+
+
+   
+
+

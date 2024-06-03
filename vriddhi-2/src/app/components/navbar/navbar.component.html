@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="navbar.component.css">
+  <title>Document</title>
+</head>
+<body>
+  
+<div class="navbar">
+  <img src="assets/logo.png" alt="Logo" class=" logo">
+  <div class="searching-pt searching-mobile">
+  <select  class="search-dropdown" >
+      <option value="" disabled selected>Select Product</option>
+      <option value="/product1">Product 1</option>
+      <option value="/product2">Product 2</option>
+      <option value="/product3">Product 3</option>
+  </select>
+  <input type="text" class="search-input" placeholder="Search categories">
+  <div class="search-icons">
+  <span class="search-icon"><i class="fas fa-search"></i></span>
+  <span class="clear-search"><i class="fas fa-times"></i></span>
+</div>
+</div>
+
+  <div class="last-part">
+  <div class="logout">
+    <a routerLink="/login">Logout</a>
+  </div>
+  <a routerLink="/selling" class="sell" > Sell</a>
+</div>
+</div>
+</body>
+</html>
